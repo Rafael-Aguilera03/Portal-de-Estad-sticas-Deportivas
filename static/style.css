@@ -1,0 +1,1276 @@
+/* Estilos generales para el body login */
+.login-page {
+    background: url('https://www.shutterstock.com/image-vector/copa-america-broadcast-template-sports-600nw-2475565373.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.login-form {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.login-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-label {
+    margin-left: 6px;
+    color: #333;
+}
+
+.button-group-log {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.login-button, .register-button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 18px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s ease;
+    font-size: 16px;
+}
+
+.login-button {
+    background-color: #007bff;
+}
+
+.register-button {
+    background-color: #a72828;
+}
+
+.login-button:hover, .register-button:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para los mensajes de error */
+.error-message {
+    color: red; 
+    margin-top: 20px; 
+    margin-bottom: 10px; 
+    padding: 10px; 
+    border: 1px solid red;
+    border-radius: 5px; 
+    background-color: #f8d7da; 
+}
+
+
+/* Estilos generales para el body register */
+.register-page {
+    background: url('https://www.shutterstock.com/image-vector/copa-america-broadcast-template-sports-600nw-2475565373.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.register-form {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 100%;
+    max-width: 320px;
+}
+
+.register-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-label {
+    margin-left: 6px;
+    color: #333;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.submit-button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 18px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s ease;
+    font-size: 16px;
+    background-color: #007bff;
+}
+
+.submit-button:hover {
+    transform: scale(1.05);
+}
+
+.footer-wrapper {
+    text-align: center;
+}
+
+.register-footer {
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.register-footer:hover {
+    transform: scale(1.05);
+}
+
+.footer-link {
+    color: #a72828;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.footer-link:hover {
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+/* Estilos generales para el navbar */
+.navbar {
+    background-color: #f8f8f8;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #e0e0e0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1);
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.navbar-item {
+    position: relative;
+}
+
+.navbar-link {
+    color: #ff0000;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+    padding: 0 40px; 
+}
+
+.navbar-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #007bff;
+    transition: width 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-link:hover::after {
+    width: 100%;
+    transform: scaleX(1);
+}
+
+.navbar-link:hover {
+    color: #ff0000;
+}
+
+/* Estilos generales para el body inicio */
+body.inicio-page {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://www.shutterstock.com/image-vector/copa-america-broadcast-template-sports-600nw-2475565373.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    min-height: 100vh; 
+    overflow-x: hidden; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+/* Contenedor del carrusel */
+.carousel-container {
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    padding: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    width: 50%; 
+    max-width: 500px; 
+    box-sizing: border-box; 
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+/* Estilos para el carrusel */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 10px; 
+    right: 10px; 
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px; 
+    border-radius: 5px;
+    font-size: 0.9rem; 
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px; 
+}
+
+.dot {
+    height: 6px; 
+    width: 6px; 
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 3px; 
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+/* Estilos para los botones de navegación del carrusel */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px; 
+    z-index: 100;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+
+/* Estilos generales para el body selecciones */
+.selecciones-page {
+    background: url('https://www.shutterstock.com/image-vector/copa-america-broadcast-template-sports-600nw-2475565373.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    margin: 0;
+    padding-top: 70px;
+}
+
+.contenedor-items {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    max-width: 70%;
+    margin: 20px auto 0; 
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100px;
+    flex: 1 1 calc(25% - 30px);
+    box-sizing: border-box;
+}
+
+.item img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.info-seleccion h2 {
+    margin: 8px 0 0;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+/* Eliminar el subrayado en los enlaces de selección */
+.item a {
+    text-decoration: none; 
+    color: #333; 
+}
+
+.item a:hover {
+    color: #007bff; 
+}
+
+
+/* Estilos generales para el body argentina */
+.argentina-page {
+    background: url('https://www.shutterstock.com/image-vector/copa-america-broadcast-template-sports-600nw-2475565373.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+    margin: 0; 
+    overflow: auto;
+}
+
+.argentina-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    width: 90%;
+    max-width: 800px; 
+    max-height: 550px; 
+    overflow-y: auto; 
+    text-align: left; 
+    margin-top: 150px; 
+}
+
+.argentina-image img {
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%;
+    margin: 0 auto 20px; 
+    display: block;
+}
+
+.argentina-title h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: bold; 
+    text-align: center; 
+}
+
+.argentina-content p {
+    color: #333;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.argentina-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.argentina-content a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos generales para el body brasil */
+.brasil-page {
+    background: url('https://www.shutterstock.com/image-vector/copa-america-broadcast-template-sports-600nw-2475565373.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+.brasil-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    width: 90%;
+    max-width: 800px; 
+    max-height: 550px; 
+    overflow-y: auto; 
+    text-align: left; 
+    margin-top: 150px; 
+}
+
+.brasil-image img {
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%;
+    margin: 0 auto 20px; 
+    display: block;
+}
+
+.brasil-title h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: bold; 
+    text-align: center; 
+}
+
+.brasil-content p {
+    color: #333;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.brasil-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.brasil-content a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos generales para el body Uruguay */
+.uruguay-page {
+    background: url('https://www.shutterstock.com/image-vector/copa-america-broadcast-template-sports-600nw-2475565373.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+}
+
+.uruguay-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    width: 90%;
+    max-width: 800px; 
+    max-height: 550px; 
+    overflow-y: auto; 
+    text-align: left; 
+    margin-top: 150px; 
+}
+
+.uruguay-image img {
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%;
+    margin: 0 auto 20px; 
+    display: block;
+}
+
+.uruguay-title h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: bold; 
+    text-align: center; 
+}
+
+.uruguay-content p {
+    color: #333;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.uruguay-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.uruguay-content a:hover {
+    text-decoration: underline;
+}
+
+
+/* Estilos generales para el body Chile */
+.chile-page {
+    background: url('https://www.shutterstock.com/image-vector/copa-america-broadcast-template-sports-600nw-2475565373.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+}
+
+.chile-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    width: 90%;
+    max-width: 800px; 
+    max-height: 550px; 
+    overflow-y: auto; 
+    text-align: left; 
+    margin-top: 150px; 
+}
+
+.chile-image img {
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%;
+    margin: 0 auto 20px; 
+    display: block;
+}
+
+.chile-title h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center; 
+}
+
+.chile-content p {
+    color: #333;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.chile-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.chile-content a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos generales para el body Colombia */
+.colombia-page {
+    background: url('https://www.shutterstock.com/image-vector/copa-america-broadcast-template-sports-600nw-2475565373.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+}
+
+.colombia-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    width: 90%;
+    max-width: 800px; 
+    max-height: 550px; 
+    overflow-y: auto; 
+    text-align: left; 
+    margin-top: 150px; 
+}
+
+.colombia-image img {
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%;
+    margin: 0 auto 20px; 
+    display: block;
+}
+
+.colombia-title h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: bold; 
+    text-align: center; 
+}
+
+.colombia-content p {
+    color: #333;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.colombia-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.colombia-content a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos generales para la página */
+body.jugadores-page {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://www.shutterstock.com/image-vector/copa-america-broadcast-template-sports-600nw-2475565373.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    min-height: 100vh; 
+    overflow-x: hidden; 
+}
+
+/* Contenedor de jugadores */
+.jugadores-container {
+    width: 80%;
+    margin: 60px auto; 
+    padding: 10px;
+    background-color: #ffffff; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto; 
+    max-height: 80vh; 
+}
+
+/* Filas de jugadores */
+.jugador-row {
+    display: flex;
+    align-items: center;
+    padding: 5px; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); 
+    flex-wrap: wrap; 
+}
+
+/* Elimina la línea en el último elemento */
+.jugador-row:last-child {
+    border-bottom: none;
+}
+
+/* Estilo para los nombres de jugadores */
+.jugador-name {
+    flex: 1;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px; 
+    font-weight: bold;
+    margin-right: 10px;
+    display: block;
+}
+
+.jugador-name:hover {
+    color: #007bff;
+}
+
+/* Estilo para la posición de los jugadores */
+.jugador-position {
+    flex: 1;
+    font-size: 12px; 
+    color: #666;
+    margin-bottom: 5px; 
+}
+
+/* Estilo para la imagen de los jugadores */
+.jugador-image img {
+    border-radius: 8px;
+    width: 80px; 
+    height: auto;
+    object-fit: cover;
+}
+
+/* Estilos generales para la página del jugador */
+body.player-page {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://www.shutterstock.com/image-vector/copa-america-broadcast-template-sports-600nw-2475565373.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    min-height: 100vh; 
+    overflow-x: hidden; 
+}
+
+/* Contenedor principal del jugador */
+.player-container {
+    width: 80%;
+    margin: 40px auto; 
+    padding: 20px;
+    background-color: #ffffff; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden; 
+}
+
+/* Estilo para la imagen del jugador */
+.player-image img {
+    width: 100%;
+    max-width: 150px; 
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 20px; 
+}
+
+/* Estilo para el título del jugador */
+.player-title h1 {
+    text-align: center;
+    color: #000; 
+    margin: 0 0 20px; 
+}
+
+/* Estilo para el contenido del jugador */
+.player-content p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000; 
+}
+
+.player-content strong {
+    color: #000; 
+}
+
+
+/* Estilos generales para la página de resultados */
+.resultados-page {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://www.shutterstock.com/image-vector/copa-america-broadcast-template-sports-600nw-2475565373.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    min-height: 100vh; 
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Estilos para las tablas de eliminatorias */
+.eliminatorias-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+.eliminatorias-table caption {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.eliminatorias-table th,
+.eliminatorias-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.eliminatorias-table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.eliminatorias-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.eliminatorias-table tbody tr:hover {
+    background-color: #e2e2e2;
+}
+
+.eliminatorias-table td {
+    font-size: 1em;
+}
+
+
+/* Estilos generales para el body usuarios */
+.usuarios-page {
+    background: url('https://www.shutterstock.com/image-vector/copa-america-broadcast-template-sports-600nw-2475565373.jpg') no-repeat center center;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    margin: 120px auto 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.table-container {
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-weight: bold;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-editar, .btn-eliminar {
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px; /* Ajusta el padding para reducir el tamaño */
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s ease;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.btn-editar {
+    background-color: #007bff;
+}
+
+.btn-editar:hover {
+    transform: scale(1.05);
+}
+
+.btn-eliminar {
+    background-color: #a72828;
+    margin-left: 10px;
+}
+
+.btn-eliminar:hover {
+    transform: scale(1.05);
+}
+
+.btn-cargar, .btn-logout {
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px; /* Ajusta el padding para reducir el tamaño */
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s ease;
+    font-size: 14px;
+    display: block;
+    margin: 20px auto;
+}
+
+.btn-cargar {
+    background-color: #28a745;
+}
+
+.btn-cargar:hover {
+    transform: scale(1.05);
+}
+
+.btn-logout {
+    background-color: #dc3545;
+}
+
+.btn-logout:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos generales para el body edit-user */
+.edit-user-page {
+    background: url('https://www.shutterstock.com/image-vector/copa-america-broadcast-template-sports-600nw-2475565373.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-user-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.edit-user-form {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 100%;
+    max-width: 320px;
+}
+
+.edit-user-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.submit-button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 18px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s ease;
+    font-size: 16px;
+    background-color: #007bff;
+}
+
+.submit-button:hover {
+    transform: scale(1.05);
+}
+
+.back-button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 18px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s ease;
+    font-size: 16px;
+    background-color:  #007bff;
+}
+
+.back-button:hover {
+    transform: scale(1.05);
+    background-color: #007bff;
+}
+
+/* Estilos generales para el body create-user */
+.create-user-page {
+    background: url('https://www.shutterstock.com/image-vector/copa-america-broadcast-template-sports-600nw-2475565373.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-user-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.create-user-form {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 100%;
+    max-width: 320px;
+}
+
+.create-user-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.submit-button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 18px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s ease;
+    font-size: 16px;
+    background-color: #007bff;
+}
+
+.submit-button:hover {
+    transform: scale(1.05);
+}
+
+.back-button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 18px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    background-color: #6c757d;
+    transition: transform 0.3s ease;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    transform: scale(1.05);
+}
+

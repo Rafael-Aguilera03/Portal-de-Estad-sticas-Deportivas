@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Usuario</title>
+    <link rel="icon" href="https://i.pinimg.com/originals/e5/80/b7/e580b745cecd0ee0ce9c87cbfc461d4c.png">
+    <link rel="stylesheet" href="/static/style.css"> <!-- Asegúrate de que esta URL sea correcta -->
+</head>
+<body class="create-user-page">
+    <div class="create-user-container">
+        <form action="{{ url_for('create_user') }}" method="post" class="create-user-form">
+            <h1 class="create-user-title">CREAR NUEVO USUARIO</h1>
+
+            {% if error %}
+                <div class="error-message">
+                    {{ error }}
+                </div>
+            {% endif %}
+
+            <div class="input-group">
+                <label for="username" class="input-label">Nombre de Usuario</label>
+                <input type="text" id="username" name="username" class="input-field" placeholder="Escribir Nombre de Usuario" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email" class="input-label">Correo Electrónico</label>
+                <input type="email" id="email" name="email" class="input-field" placeholder="Escribir Correo Electrónico" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password" class="input-label">Contraseña</label>
+                <input type="password" id="password" name="password" class="input-field" placeholder="Escribir Contraseña" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="pais" class="input-label">País</label>
+                <select id="pais" name="pais" class="input-field" required>
+                    <optgroup label="Grupo 1">
+                        <option value="Argentina">Argentina</option>
+                        <option value="Peru">Perú</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Canada">Canadá</option>
+                    </optgroup>
+                    <optgroup label="Grupo 2">
+                        <option value="Mexico">México</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="Venezuela">Venezuela</option>
+                        <option value="Jamaica">Jamaica</option>
+                    </optgroup>
+                    <optgroup label="Grupo 3">
+                        <option value="Estados Unidos">Estados Unidos</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Panama">Panamá</option>
+                        <option value="Bolivia">Bolivia</option>
+                    </optgroup>
+                    <optgroup label="Grupo 4">
+                        <option value="Brasil">Brasil</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Costa Rica">Costa Rica</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="button-wrapper">
+                <button type="submit" class="submit-button">CREAR USUARIO</button>
+                <button type="button" class="back-button" onclick="window.location.href='/users'">VOLVER</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

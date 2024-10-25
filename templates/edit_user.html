@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Usuario</title>
+    <link rel="icon" href="https://i.pinimg.com/originals/e5/80/b7/e580b745cecd0ee0ce9c87cbfc461d4c.png">
+    <link rel="stylesheet" href="/static/style.css"> <!-- Asegúrate de que esta URL sea correcta -->
+</head>
+<body class="edit-user-page">
+    <div class="edit-user-container">
+        <form action="{{ url_for('edit_user', correo=user[1]) }}" method="post" class="edit-user-form">
+            <h1 class="edit-user-title">EDITAR USUARIO</h1>
+
+            {% if error %}
+                <div class="error-message">
+                    {{ error }}
+                </div>
+            {% endif %}
+
+            <div class="input-group">
+                <label for="username" class="input-label">Nombre de Usuario</label>
+                <input type="text" id="username" name="username" class="input-field" placeholder="Escribir Nombre de Usuario" value="{{ user[0] }}" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email" class="input-label">Correo Electrónico</label>
+                <input type="email" id="email" name="email" class="input-field" placeholder="Escribir Correo Electrónico" value="{{ user[1] }}" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="pais" class="input-label">País</label>
+                <select id="pais" name="pais" class="input-field" required>
+                    <optgroup label="Grupo 1">
+                        <option value="Argentina" {% if user[2] == "Argentina" %}selected{% endif %}>Argentina</option>
+                        <option value="Peru" {% if user[2] == "Peru" %}selected{% endif %}>Perú</option>
+                        <option value="Chile" {% if user[2] == "Chile" %}selected{% endif %}>Chile</option>
+                        <option value="Canada" {% if user[2] == "Canada" %}selected{% endif %}>Canadá</option>
+                    </optgroup>
+                    <optgroup label="Grupo 2">
+                        <option value="Mexico" {% if user[2] == "Mexico" %}selected{% endif %}>México</option>
+                        <option value="Ecuador" {% if user[2] == "Ecuador" %}selected{% endif %}>Ecuador</option>
+                        <option value="Venezuela" {% if user[2] == "Venezuela" %}selected{% endif %}>Venezuela</option>
+                        <option value="Jamaica" {% if user[2] == "Jamaica" %}selected{% endif %}>Jamaica</option>
+                    </optgroup>
+                    <optgroup label="Grupo 3">
+                        <option value="Estados Unidos" {% if user[2] == "Estados Unidos" %}selected{% endif %}>Estados Unidos</option>
+                        <option value="Uruguay" {% if user[2] == "Uruguay" %}selected{% endif %}>Uruguay</option>
+                        <option value="Panama" {% if user[2] == "Panama" %}selected{% endif %}>Panamá</option>
+                        <option value="Bolivia" {% if user[2] == "Bolivia" %}selected{% endif %}>Bolivia</option>
+                    </optgroup>
+                    <optgroup label="Grupo 4">
+                        <option value="Brasil" {% if user[2] == "Brasil" %}selected{% endif %}>Brasil</option>
+                        <option value="Colombia" {% if user[2] == "Colombia" %}selected{% endif %}>Colombia</option>
+                        <option value="Paraguay" {% if user[2] == "Paraguay" %}selected{% endif %}>Paraguay</option>
+                        <option value="Costa Rica" {% if user[2] == "Costa Rica" %}selected{% endif %}>Costa Rica</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="button-wrapper">
+                <button type="submit" class="submit-button">GUARDAR CAMBIOS</button>
+                <button type="button" class="back-button" onclick="window.location.href='/users'">VOLVER</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

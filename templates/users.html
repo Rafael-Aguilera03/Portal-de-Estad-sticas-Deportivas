@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios</title>
+    <link rel="icon" href="https://i.pinimg.com/originals/e5/80/b7/e580b745cecd0ee0ce9c87cbfc461d4c.png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="usuarios-page">
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="{{ url_for('inicio') }}" title="Ir al inicio">
+                <img src="https://toppng.com/uploads/small/117165997333yfm1ftauhxv3y66zxqvauohuvzwkx3l7pz7njckkjctifk67efujselxgbm5lrf1d1i3nu39c04d92iucvnzxpoh5pzu09jyus1.webp" alt="COPA AMERICA 2024">
+            </a>
+        </div>
+        <ul class="navbar-links">
+            <li class="navbar-item"><a href="{{ url_for('selecciones') }}" class="navbar-link">SELECCIONES</a></li>
+            <li class="navbar-item"><a href="{{ url_for('jugadores') }}" class="navbar-link">JUGADORES DESTACADOS</a></li>
+            <li class="navbar-item"><a href="{{ url_for('resultados') }}" class="navbar-link">RESULTADOS</a></li>
+            <li class="navbar-item"><a href="{{ url_for('manage_users') }}" class="navbar-link">USUARIOS</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Gestión de Usuarios</h1>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre de Usuario</th>
+                        <th>Correo Electrónico</th>
+                        <th>País</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if users %}
+                        {% for user in users %}
+                        <tr>
+                            <td>{{ user[0] }}</td>
+                            <td>{{ user[1] }}</td>
+                            <td>{{ user[2] }}</td>
+                            <td>
+                                <a href="{{ url_for('edit_user', correo=user[1]) }}" class="btn-editar">EDITAR</a>
+                                <a href="{{ url_for('delete_user', correo=user[1]) }}" class="btn-eliminar" onclick="return confirm('¿Estás seguro de que deseas eliminar este usuario?');">ELIMINAR</a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    {% else %}
+                        <tr>
+                            <td colspan="4">No se encontraron usuarios.</td>
+                        </tr>
+                    {% endif %}
+                </tbody>
+            </table>
+        </div>
+        <div class="button-container">
+            <a href="{{ url_for('create_user') }}" class="btn-cargar">CREAR NUEVO USUARIO</a>
+        </div>
+        <div class="logout-container">
+            <a href="{{ url_for('logout') }}" class="btn-logout">LOGOUT</a>
+        </div>
+    </div>
+</body>
+</html>

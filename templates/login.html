@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="icon" href="https://i.pinimg.com/originals/e5/80/b7/e580b745cecd0ee0ce9c87cbfc461d4c.png">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <div class="login-form">
+            <form action="/login" method="post">
+                <h1 class="login-title">INICIAR SESIÓN</h1>
+
+                {% if error %}
+                    <div class="error-message">
+                        {{ error }}
+                    </div>
+                {% endif %}
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="text" id="email" name="email" class="form-input" placeholder="Escribir Correo electrónico" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" id="password" name="password" class="form-input" placeholder="Escribir Contraseña" required>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="show-password" class="checkbox">
+                    <label for="show-password" class="checkbox-label">Mostrar contraseña</label>
+                </div>
+
+                <div class="button-group-log">
+                    <button type="submit" class="login-button">INICIAR</button>
+                    <a href="/register" class="register-button">REGISTRARSE</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document
+            .getElementById("show-password")
+            .addEventListener("change", function () {
+                var passwordInput = document.getElementById("password");
+                passwordInput.type = this.checked ? "text" : "password";
+            });
+    </script>
+</body>
+</html>

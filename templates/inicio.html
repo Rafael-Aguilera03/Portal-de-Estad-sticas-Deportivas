@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="icon" href="https://i.pinimg.com/originals/e5/80/b7/e580b745cecd0ee0ce9c87cbfc461d4c.png">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/carousel.css"> <!-- Asegúrate de incluir tu CSS para el carrusel -->
+</head>
+<body class="inicio-page">
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="/inicio" title="Ir al inicio">
+                <img src="https://toppng.com/uploads/small/117165997333yfm1ftauhxv3y66zxqvauohuvzwkx3l7pz7njckkjctifk67efujselxgbm5lrf1d1i3nu39c04d92iucvnzxpoh5pzu09jyus1.webp" alt="COPA AMERICA 2024">
+            </a>
+        </div>
+        <ul class="navbar-links">
+            <li class="navbar-item"><a href="/selecciones" class="navbar-link">SELECCIONES</a></li>
+            <li class="navbar-item"><a href="/jugadores" class="navbar-link">JUGADORES DESTACADOS</a></li>
+            <li class="navbar-item"><a href="/resultados" class="navbar-link">RESULTADOS</a></li>
+            <li class="navbar-item"><a href="/users" class="navbar-link">USUARIOS</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenedor del carrusel -->
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="https://cdn.conmebol.com/wp-content/uploads/2024/07/Conmebol-Copa-America-player-stats-7544d29a-7089-42f6-a4a6-8d67f0e03876-1-1024x1024.png" alt="Imagen 1">
+                    <div class="carousel-caption">JUGADOR DEL TORNEO</div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdn.conmebol.com/wp-content/uploads/2024/07/Conmebol-Copa-America-player-stats-92292adf-cf6b-485f-aa12-01aed3666a81-1-1024x1024.png" alt="Imagen 2">
+                    <div class="carousel-caption">GOLEADOR DEL TORNEO</div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdn.conmebol.com/wp-content/uploads/2024/07/Conmebol-Copa-America-player-stats-a8687545-c79a-456c-a3fb-ad9d74b32f46-1-1024x1024.png" alt="Imagen 3">
+                    <div class="carousel-caption">ARQUERO DEL TORNEO</div>
+                </div>
+            </div>
+            <div class="carousel-dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <!-- Botones de navegación -->
+            <button class="carousel-control prev">&#10094;</button>
+            <button class="carousel-control next">&#10095;</button>
+        </div>
+    </div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const carouselInner = document.querySelector('.carousel-inner');
+        const dots = document.querySelectorAll('.dot');
+        const prevButton = document.querySelector('.carousel-control.prev');
+        const nextButton = document.querySelector('.carousel-control.next');
+        let index = 0;
+
+        function showSlide(n) {
+            if (n >= dots.length) index = 0;
+            else if (n < 0) index = dots.length - 1;
+
+            // Ajusta la posición del carrusel
+            carouselInner.style.transform = `translateX(${-index * 100}%)`;
+
+            // Actualiza los puntos
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            index++;
+            showSlide(index);
+        }
+
+        function prevSlide() {
+            index--;
+            showSlide(index);
+        }
+
+        // Configura los eventos para los botones
+        nextButton.addEventListener('click', nextSlide);
+        prevButton.addEventListener('click', prevSlide);
+
+        // Muestra la primera diapositiva
+        showSlide(index);
+    });
+    </script>
+</body>
+</html>
